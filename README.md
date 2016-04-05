@@ -1,6 +1,9 @@
-#MongoDB Shell
+#MongoDB
+#####mongoDB note
 
-##shell
+##Shell
 - Import data into the collection from json file
+  `mongoimport --db <XXX> --collection <XXX> --drop --file <XXX.json>`
 
- `mongoimport --db <XXX> --collection <XXX> --drop --file <XXX.json>`
+
+## Java Driver
