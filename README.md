@@ -16,8 +16,9 @@
 - until `waiting for connections on port 27017`
 
 #### import data
-- import data from a json file  
-  > `mongoimport --db <XXX> --collection <XXX> --drop --file <XXX.json>`
+- import data from a json file.  
+  > `mongoimport --db <XXX> --collection <XXX> --drop --file <XXX.json>`  
+  > 
 
 ## Shell
 
