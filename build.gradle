@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+
+    // gson
+    compile 'com.google.code.gson:gson:2.5'
+
+    // mongo DB
+    compile 'org.mongodb:mongo-java-driver:3.2.2'
+
+}
