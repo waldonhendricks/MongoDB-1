@@ -34,7 +34,7 @@ public class MongoQuery {
             System.out.println(d.toJson());
         }
 
-        for (Document d : collection.find(gt("Id",7)).sort(ascending("zip"))) {
+        for (Document d : collection.find(gt("Id",7)).sort(ascending("date"))) {
             System.out.println(d.toJson());
         }
 

@@ -21,28 +21,39 @@ public class MongoInsert {
         MongoCollection<Document> collection = db.getCollection("users");
 
 
-        Document doc = new Document("name","Jason")
-                .append("no","r03525666")
-                .append("gender","male");
+        Document doc = new Document("Id",11)
+                .append("name","Anderson")
+                .append("phone","1-849-642-8797")
+                .append("zip", 29131)
+                .append("city","Glovertown")
+                .append("date","2015/04/06");
 
         collection.insertOne(doc);
 
 
         List<Document> documents = new ArrayList<Document>();
-        documents.add(new Document("name","Jessica")
-                .append("age","21")
-                .append("no","r03525777")
-                .append("gender","female"));
+        documents.add(new Document("Id",12)
+                .append("name","Matthew")
+                .append("phone","0972-939-397")
+                .append("zip", 29131)
+                .append("city","Glovertown")
+                .append("date","2015/12/23"));
 
-        documents.add(new Document("name","Eric")
-                .append("age","22")
-                .append("no", "r03525888")
-                .append("gender", "male"));
+        documents.add(new Document("Id",13)
+                .append("name","Kevin")
+                .append("phone","1-852-782-8797")
+                .append("zip", 5898)
+                .append("city","Huntly")
+                .append("date","2014/12/23"));
 
-        documents.add(new Document("name","Jimmy")
-                .append("age","26")
-                .append("no", "r03525999")
-                .append("gender", "male"));
+        documents.add(new Document("Id",14)
+                .append("name","Nick")
+                .append("phone","1-832-648-8567")
+                .append("zip", 5898)
+                .append("city","Huntly")
+                .append("date","2016/01/23"));
+
+
 
         collection.insertMany(documents);
 
