@@ -6,7 +6,9 @@
 - Make directory befor startup or specify the path.
 
   > `md \data\db`
+  >
   > or
+  >
   > `<mongo path>\bin\mongod.exe --dbpath "D:\data\mongo\db"`
   >
 
@@ -20,7 +22,6 @@
 - import data from a json file
 
   > `mongoimport --db <XXX> --collection <XXX> --drop --file <XXX.json>`
-  >
 
 ## Shell
 
