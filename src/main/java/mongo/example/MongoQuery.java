@@ -19,27 +19,27 @@ public class MongoQuery {
 
         MongoDatabase db = client.getDatabase("test");
 
-        MongoCollection<Document> coll = db.getCollection("users");
+        MongoCollection<Document> collection = db.getCollection("users");
 
 
         // query
 
-        Document user = coll.find().first();
+        Document user = collection.find().first();
 
         System.out.println(user.toJson());
 
-        System.out.println(coll.find(eq("Id",1)).first().toJson());
+        System.out.println(collection.find(eq("Id", 1)).first().toJson());
 
-        for (Document d : coll.find( and(gt("Id",3) , lt("Id",6)) )) {
+        for (Document d : collection.find( and(gt("Id",3) , lt("Id",6)) )) {
             System.out.println(d.toJson());
         }
 
-        for (Document d : coll.find(gt("Id",7)).sort(ascending("zip"))) {
+        for (Document d : collection.find(gt("Id",7)).sort(ascending("zip"))) {
             System.out.println(d.toJson());
         }
 
 
-        System.out.println(coll.count());
+        System.out.println(collection.count());
 
 
         client.close();
