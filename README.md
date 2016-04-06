@@ -5,8 +5,8 @@
 - MongoDB's default data path is `\data\db`.
 - Make directory befor startup or specify the path.
 
-  > `md \data\db`  
-  > or  
+  > `md \data\db`
+  > or
   > `<mongo path>\bin\mongod.exe --dbpath "D:\data\mongo\db"`
   >
 
